@@ -31,3 +31,20 @@ h5,
 h6 {
   font-family: "Helvetica", "Arial", sans-serif;
 }
+
+/*
+What about linking a CSS file to another CSS file? You can have all your styles living inside one main CSS file, or 
+you can use @import to break your styles (one for layout, one for images, one for blog cards, etc.) into a number of smaller, 
+focused files. This makes it a lot easier to manage the styles they contain and your code is more scalable and modular! */
+
+
+// at the top of your main CSS file
+
+@import “./layout”;
+@import “./images”;
+@import “./blog-cards”;
+
+/* How to link stylesheet to the html document */
+
+<link href="https://udacity.com/style.css" type="text/css" rel="stylesheet" />
+
